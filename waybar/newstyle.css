@@ -1,0 +1,13 @@
+* {
+    font-family: CodeNewRoman Nerd Font Prop, FontAwesome, Roboto, sans-serif;
+    font-size: 10px;
+}
+window@#waybar {
+    background-color: rgba (0,0,0, 0);
+    color: rgba(0,0,0, 0);
+    transition-duration: .1s;
+    margin: 0px;
+}
+window#waybar.termite {
+    background-color: #
+}

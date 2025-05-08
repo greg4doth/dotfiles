@@ -1,0 +1,48 @@
+* {
+    font-family: CodeNewRoman Nerd Font Propo, FontAwesome, Roboto< Arial, sans-serif;
+    font-size: 15px;
+}
+box.modules-right {
+    padding: 0px; 
+    margin: 0px;
+}
+
+box.modules-left {
+    padding: 0px;
+    margin: 0px;
+
+}
+label.modules-right {
+    padding: 0px;
+    margin: 0px;
+
+
+}
+#workspaces button {
+    background-color: #414868;
+    color: #a9b1d6;
+    border-radius: 3px;
+    padding: 0px 8px 0px 8px;
+    min-height: 8px;
+    margin: 8px 3px 8px 3px;
+}
+
+#workspaces button:hover {
+    background: #9aa5ce;
+    color: #c0caf5;
+}
+
+#workspaces button.active
+{
+    background-color: #c0caf5;
+    color: #c0caf5;
+
+}
+
+#workspaces button.urgent {
+    background-color: #bb9af7;
+    color: #1a1b26;
+}
+
+
+

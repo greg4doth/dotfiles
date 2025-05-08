@@ -1,0 +1,62 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	background-color: rgba(26, 27, 38, 0);
+}
+
+
+button {
+    border-radius: 1px;
+    border-color: #C0CAF5;
+	text-decoration-color: #FFFFFF;
+    color: #C0CAF5;
+	background-color: rgba(26, 27, 38, 0.85);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+	background-color: rgba(26, 27, 38 ,0.7);
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("/usr/share/wleave/icons/lock.svg"), url("/usr/share/wleave/icons/lock.svg"));
+     background-color: rgba(26, 27, 38, 0.85);
+     border-radius: 25px 0px 0px 0px;
+     border-top: 1px solid #C0CAF5;
+     border-left: 1px solid #C0CAF5;
+
+
+}
+button:hover#lock {
+    background-image: image(url("/usr/share/wleave/icons/lock.svg"), url("/usr/share/wleave/icons/lock.svg"));
+    background-color: rgba(26, 27, 38, 0.7);
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wleave/icons/suspend.svg"), url("/usr/share/wleave/icons/suspend.svg"));
+    border-radius: 0px 25px  0px 0px;
+    border-top: 1px solid #C0CAF5;
+    border-right: 1px solid #C0CAF5;
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wleave/icons/shutdown.svg"), url("/usr/share/wleave/icons/shutdown.svg"));
+    border-radius: 0px 0px  0px 25px;
+    border-left: 1px solid #C0CAF5;
+    border-bottom: 1px solid #C0CAF5;
+}
+
+
+
+#reboot {
+    background-image: image(url("/usr/share/wleave/icons/reboot.svg"), url("/usr/share/wleave/icons/reboot.svg"));
+    border-radius: 0px 0px  25px 0px;
+    border-right: 1px solid #C0CAF5;
+    border-bottom: 1px solid #C0CAF5;
+}

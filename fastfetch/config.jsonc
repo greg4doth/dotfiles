@@ -1,0 +1,190 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "builtin",        // Logo type: auto, builtin, small, file, etc.
+    "source": "arch",      // Built-in logo name or file path
+    "width": 65,           // Width in characters (for image logos)
+    "height": 35,          // Height in characters (for image logos)
+    "padding": {
+        "top": 0,          // Top padding
+        "left": 0,         // Left padding
+        "right": 5         // Right padding
+    },
+    "color": {             // Override logo colors
+        "1": "cyan",
+        "2": "cyan"
+    }
+},
+"display": {
+    "separator": ": ",     // Separator between keys and values
+    "color": {
+        "keys": "blue",    // Key color
+        "title": "green"     // Title color
+    },
+    "key": {
+        "width": 15,       // Aligns keys to this width
+        "type": "string"   // string, icon, both, or none
+    },
+    "bar": {
+        "width": 10,       // Width of percentage bars
+        "charElapsed": "■", // Character for elapsed portion
+        "charTotal": "-"   // Character for total portion
+    },
+    "percent": {
+        "type": 9,         // 1=number, 2=bar, 3=both, 9=colored number
+        "color": {
+            "green": "green",
+            "yellow": "yellow",
+            "red": "red"
+        }
+    }
+},
+"modules": [
+    "title",
+    "separator",
+    {
+        "type": "os",
+        "key": "OS",
+        "keyColor": "blue",
+        "format": "{3}"
+    },
+    {
+        "type": "kernel",
+        "key": "Kernel",
+        "format": "{1} {2}"
+    },
+    {
+        "type": "memory",
+        "key": "Memory",
+        "format": "{1}/{2} {4} ({3})",
+        "percent": {
+            "type": 3,     // Show both percentage number and bar
+            "green": 30,   // Values below 30% in green
+            "yellow": 70   // 30-70% in yellow, >70% in red
+        }
+    },
+ {
+        "type" : "cpuusage",
+        "key": "",
+     "percent": {
+            "type": 3,
+            "green": 20,
+            "yellow": 70,
+            "red": 100
+
+        }
+
+    },
+ {
+        "type": "battery",
+        "key" : "Battery",
+        "format":"{5} {10} ({4})",
+        "percent" :{
+            "type": 3
+
+        }
+    },
+    {
+        "type":"processes",
+        "format": "{1}"
+
+    },
+    {
+        "type": "separator"
+    },
+  {
+        "type": "disk",
+        "key": "",
+        "format": "{1}/{2} {3} ({13}) created {15} days ago",
+        "percent":{
+            "type":3
+        }    
+    },
+  {
+        "type": "cpu",
+        "key": "CPU"
+   
+    },
+    {
+        "type": "gpu"
+
+    },
+ {
+        "type": "packages",
+        "format": "{2} (pacman) {1} (all)"
+    },
+    {
+        "type":"separator"
+    },
+
+    {
+        "type": "bluetooth",
+        "key": "BT" 
+    },
+     {
+        "type": "shell",
+        "format": "{1} {4}"  
+    },
+ {
+        "type": "terminal",
+        "format": "{1} {6}"  
+    },
+    {
+        "type": "uptime",
+        "format": ""  
+    },
+    {
+        "type": "wm",
+        "format": "{2} {5}"
+
+    },
+
+
+         {
+        "type": "DateTime",
+        "key": "Date&Time",
+        "format": "{14}:{18}, {8}, {11}.{4}.{1}, "
+    },
+    {
+        "type":"separator"
+    },
+
+    {
+        "type": "colors",
+        "key": " "
+    }
+
+]
+}
+ /* "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}*/
