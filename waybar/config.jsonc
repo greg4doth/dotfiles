@@ -260,11 +260,11 @@
     },
     "custom/logout":{
     "format"  : "⏻ ",
-    "on-click": "/home/nekochem/d/scripts/waybar/wlogout.sh"
+    "on-click": "/$HOME/scripts/waybar/wlogout.sh"
     },
     "custom/swww": {
     "format": "󰼀",
-    "on-click": "/home/nekochem/d/scripts/waybar/swww_wallpaper.sh"
+    "on-click": "/$HOME/scripts/waybar/swww_wallpaper.sh"
 
 
     }
